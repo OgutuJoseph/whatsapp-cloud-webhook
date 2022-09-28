@@ -9,7 +9,9 @@ const mytoken = process.env.MYTOKEN;
 
 /** routes */
 app.get('/', (req, res) => {
-    res.sendStatus(201).send('Whatsapp Webhook - Cloud API')
+    // res.sendStatus(201).send('Whatsapp Webhook - Cloud API')
+    // for heroku deployment
+    res.status(200).send('Whatsapp Webhook - Cloud API')
 });
 
 // to verify the callback url from dashboard side - cloud api side
