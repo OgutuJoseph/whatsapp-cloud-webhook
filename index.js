@@ -72,5 +72,6 @@ app.get("/",(req,res)=>{
 const port = process.env.PORT;
 app.listen(process.env.PORT,()=>{
     console.log(`Server connected on port: ${port}`)
+    console.log(`token: `, process.env.TOKEN)
     console.log(`my token: `, process.env.MYTOKEN)
 });
