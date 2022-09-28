@@ -10,7 +10,8 @@ const mytoken = process.env.MYTOKEN;
 /** routes */
 app.get('/', (req, res) => {
     // res.sendStatus(201).send('Whatsapp Webhook - Cloud API')
-    // for heroku deployment
+
+    /** prefer below over above, as above will print the status on browser/postman etc */
     res.status(200).send('Whatsapp Webhook - Cloud API')
 });
 
