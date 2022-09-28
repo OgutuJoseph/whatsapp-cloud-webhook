@@ -32,6 +32,7 @@ app.get('/webhook', (req, res) => {
 
 app.post('/webhook', (req, res) => {
 	let body_param = req.body;
+    console.log('body: ', JSON.stringify(body_param,null,2))
 
 	if(body_param.object){
 		if(body_param.entry &&
