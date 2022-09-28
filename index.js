@@ -64,7 +64,13 @@ app.post('/webhook', (req, res) => {
 
 /** connect app */
 const port = process.env.PORT;
-app.listen(8000 || port, () => {
+// app.listen(8000 || port, () => {
+//     // console.log(`Server connected on port: ${port}`)
+//     console.log(`Server connected.`)
+// })
+
+/** for heroku deployment */
+app.listen(port, () => {
     // console.log(`Server connected on port: ${port}`)
     console.log(`Server connected.`)
 })
