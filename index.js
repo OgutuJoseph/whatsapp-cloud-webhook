@@ -69,6 +69,7 @@ app.get("/",(req,res)=>{
     es.status(200).send('Whatsapp Webhook - Cloud API')
 });
 
+const port = process.env.PORT;
 app.listen(process.env.PORT,()=>{
     console.log(`Server connected on port: ${port}`)
     console.log(`my token: `, process.env.MYTOKEN)
