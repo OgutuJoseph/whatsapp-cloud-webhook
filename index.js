@@ -79,6 +79,6 @@ const port = process.env.PORT;
 
 /** for heroku deployment */
 app.listen(port, () => {
-    // console.log(`Server connected on port: ${port}`)
+    console.log(`Server connected on port: ${port}`)
     console.log(`Server connected.`)
 })
