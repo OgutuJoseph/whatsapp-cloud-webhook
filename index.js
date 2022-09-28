@@ -31,12 +31,12 @@ app.post("/webhook",(req,res)=>{
         console.log("inside body param");
         if(body_param.entry && 
             body_param.entry[0].changes && 
-            body_param.entry[0].changes[0].value.messages && 
-            body_param.entry[0].changes[0].value.messages[0]  
+            body_param.entry[0].changes[0].value.message && 
+            body_param.entry[0].changes[0].value.message[0]  
         ){
             let phon_no_id=body_param.entry[0].changes[0].value.metadata.phone_number_id;
-            let from = body_param.entry[0].changes[0].value.messages[0].from; 
-            let msg_body = body_param.entry[0].changes[0].value.messages[0].text.body;
+            let from = body_param.entry[0].changes[0].value.message[0].from; 
+            let msg_body = body_param.entry[0].changes[0].value.message[0].text.body;
 
             console.log("phone number "+phon_no_id);
             console.log("from "+from);
