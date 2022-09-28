@@ -66,7 +66,7 @@ app.post("/webhook",(req,res)=>{
 });
 
 app.get("/",(req,res)=>{
-    es.status(200).send('Whatsapp Webhook - Cloud API')
+    res.status(200).send('Whatsapp Webhook - Cloud API')
 });
 
 const port = process.env.PORT;
